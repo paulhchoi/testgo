@@ -1,0 +1,16 @@
+syntax="proto3";
+option go_package = ".;main";
+
+package main;
+
+message Book {
+  string ID = 1;
+  string Isbn = 2;
+  string Title = 3;
+  Author Author = 4;
+}
+
+message Author {
+  string FirstName = 1;
+  string LastName = 2;
+}
